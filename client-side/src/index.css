@@ -6,7 +6,10 @@
 @theme {
     --color-primary: #174d35;
 }
+*{
+    box-sizing: border-box;
+}
 
-body {
+html, body {
     font-family: "Quicksand";
 }
