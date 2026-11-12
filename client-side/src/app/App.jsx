@@ -6,7 +6,7 @@ import PublicRoute from '../Features/Auth/PublicRoute'
 
 import LoginPage from '../Features/Auth/Login'
 import SignupPage from '../Features/Auth/SignUp'
-// import DashboardPage from '../features/dashboard/DashboardPage'
+import DashboardPage from '../Features/Dashboard/Dashboard'
 // import NewSalePage from '../features/sales/NewSalePage'
 // import SalesHistoryPage from '../features/sales/SalesHistoryPage'
 // import InventoryPage from '../features/inventory/InventoryPage'
@@ -27,7 +27,8 @@ export default function App() {
       {/* Private: only visible when logged in */}
 
       <Route element={<ProtectedRoute />}>
-        {/* <Route path="/" element={<DashboardPage />} />
+      <Route path="/" element={<DashboardPage />} />
+        {/* 
         <Route path="/sales/new" element={<NewSalePage />} />
         <Route path="/sales" element={<SalesHistoryPage />} />
         <Route path="/inventory" element={<InventoryPage />} />
